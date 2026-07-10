@@ -48,6 +48,19 @@
 	status = "disabled";
 };
 
+&usb3 {
+	bootph-pre-ram;
+};
+
+&usb3_dwc3 {
+	dr_mode = "peripheral";
+	bootph-pre-ram;
+};
+
+&usb3_phy {
+	bootph-pre-ram;
+};
+
 &pinctrl_uart1 {
 	bootph-pre-ram;
 };
